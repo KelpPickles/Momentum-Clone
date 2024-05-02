@@ -92,8 +92,86 @@ body {
     margin-bottom: 20px;
     width: 300px;
     height: 230px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: white;
+}
+
+#TodoTop {
+    width: 100%;
+    position: absolute;
+    top:15px;
+    left: 20px;
+    font-size: 20px;
+    letter-spacing: -1px;
+}
+
+#arrow-down {
+    position: absolute;
+    top:15%;
+    margin-left: 4px;
+}
+
+#arrow-down > img {
+    width: 10px;
+    padding: 7px;
+    border-radius: 100%;
+    
+}
+
+#arrow-down > img:hover {
+    background-color: #ebebeb;
+    cursor: pointer;
+}
+
+#TodoMore {
+    position: absolute;
+    right: 11%;
+}
+
+#TodoMore > img {
+    padding: 3px;
+    border-radius: 100%;
+    width: 20px;
+}
+
+#TodoMore > img:hover {
+    background-color: #ebebeb;
+    cursor: pointer;
+}
+
+#TodoCenter {
+    width: 100%;
+    position: absolute;
+    top:30%;
+    text-align: center;
+    color: #888888;
+}
+
+#SwcInbox {
+    border: none;
+    background-color: transparent;
+    color: #c1c1c1;
+    font-size: 15px;
+}
+
+#SwcInbox:hover {
+    color:grey;
+    cursor: pointer;
+}
+
+#NewTodo {
+    left: 40%;
+    color: white;
+    border: none;
+    background-color: rgb(176,87,87);
+    margin-top:10px;
+    padding: 8px 30px;
+    border-radius: 30px;
+}
+
+#NewTodo:hover {
+    background-color: rgb(187,108,108);
+    cursor:pointer;
 }
 
 #TodoboxLast {

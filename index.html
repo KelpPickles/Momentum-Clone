@@ -34,7 +34,26 @@
                 <span id="author">이소룡</span>
             </span>
             <div id="TodoArea">
-                <div class="TodoHidden" id="TodoList"></div>
+                <div class="TodoHidden" id="TodoList">
+                    <div id="TodoTop">
+                        <span>Today</span>
+                        <span id="arrow-down">
+                            <img src="icon/arrow/arrow-down.png" onclick="alert('클릭')">
+                        </span>
+                        <span id="TodoMore">
+                            <img src="icon/more.png" onclick="alert('클릭')">
+                        </span>
+                    </div>
+
+                    <div id="TodoCenter">
+                        <div>Add a todo to get started</div>
+                        <button id="SwcInbox">Switch to Inbox > </button>
+                        <div>
+                            <button id="NewTodo">New Todo</button>
+                        </div>
+                        
+                    </div>
+                </div>
                 <div class="TodoHidden" id="TodoboxLast"></div>
                 <button id="TodoBtn">Todo</button>
             </div>
