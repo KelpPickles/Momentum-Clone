@@ -17,13 +17,20 @@
         </div>
 
         <div id="centerArea">
-            <div id="clock">00:00</div>
-            <div id="hello">Good Day, Kim.</div>
+            <div id="clock">
+                <span id="time">00</span>
+                <span id="second">:</span>
+                <span id="minute">00</span>
+            </div>
+            <div id="hello" style="">
+                <div id="Greet">What is your name?</div>
+                <input id="name" type="text" required spellcheck="false" onkeypress="enterKey()">
+            </div>
         </div>
 
         <div id="mainGoal">
             <div>What is your main goal for today?</div>
-            <input id="Goal" type="text" required>
+            <input id="Goal" type="text" required spellcheck="false">
         </div>
 
         <div id="foot">
@@ -34,14 +41,16 @@
                 <span id="author">이소룡</span>
             </span>
             <div id="TodoArea">
-                <div class="TodoHidden" id="TodoList">
+                <div class="TodoHidden" style="visibility: hidden;" id="TodoList">
                     <div id="TodoTop">
-                        <span>Today</span>
-                        <span id="arrow-down">
-                            <img src="icon/arrow/arrow-down.png" onclick="alert('클릭')">
-                        </span>
+                        <div id="TodoCategory">
+                            <span>Today</span>
+                            <span id="arrow-down">
+                                <img src="icon/arrow/arrow-down.png">
+                            </span>
+                        </div>
                         <span id="TodoMore">
-                            <img src="icon/more.png" onclick="alert('클릭')">
+                            <img src="icon/more.png">
                         </span>
                     </div>
 
@@ -51,14 +60,27 @@
                         <div>
                             <button id="NewTodo">New Todo</button>
                         </div>
-                        
+                        <div id="TodoboxLast"></div>
                     </div>
                 </div>
-                <div class="TodoHidden" id="TodoboxLast"></div>
-                <button id="TodoBtn">Todo</button>
+                
+                <button id="TodoBtn" onclick="TodoBtn()">Todo</button>
             </div>
+
+            <div id="optionArea" style="visibility: hidden;">
+                <div id="optionBox"></div>
+                <div id="optionBoxLast"></div>
+            </div>
+            <div id="optionBtn">
+                <img src="icon/gear.png" onclick="OptBtn()">
+            </div>
+            
             
         </div>
     </div>
+    <script src="js/quotes.js"></script>
+    <script src="js/Button.js"></script>
+    <script src="js/watch.js"></script>
+    <script src="js/hello.js"></script>
 </body>
 </html>
