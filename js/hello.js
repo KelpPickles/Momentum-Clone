@@ -16,9 +16,11 @@ function enterKey() {
 }
 
 function getName() {
+    const optbtn = document.getElementById("optionBtn");
     const Name = inputBox.value;
     textBox.textContent = `Good Day, ${Name}.`
     inputBox.style.visibility = 'hidden';
+    optbtn.removeAttribute('style');
     window.localStorage.setItem('name', Name);
 }
 

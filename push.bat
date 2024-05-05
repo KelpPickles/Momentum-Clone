@@ -1,3 +1,5 @@
+@echo off
+
 set /p text="업데이트 내용 >> "
 
 git add *

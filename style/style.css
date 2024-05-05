@@ -236,10 +236,74 @@ body {
     
 }
 
+#optionUserLine {
+    width: 300px;
+    height: 40px;
+    position: absolute;
+    bottom: 15px;
+}
+
+#userIcon {
+    width: 35px;
+    border-radius: 100%;
+    margin-left: 20px;
+}
+
+#userName {
+    position: absolute;
+    display: inline-block;
+    font-size: 15px;
+    left: 60px;
+    bottom: 13px;
+    color: grey;
+}
+
+#userArrow {
+    display: inline-block;
+    position: absolute;
+    left: 130px;
+    bottom: 11px;
+    transform: rotate(180deg);
+}
+
+#userArrow > img {
+    width: 10px;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+#userArrow > img:hover {
+    background-color: #ebebeb;
+}
+
+#userBox {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    width: 130px;
+    height: 50px;
+    background-color: #ebebeb;
+    border-radius: 10%;
+}
+
+#logoutBtn {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+
+    color: rgb(110, 110, 110);
+    font-size: 15px;
+}
+
+#logoutBtn:hover {
+    cursor: pointer;
+    color: rgb(70, 70, 70);
+}
+
 #optionBtn {
     position: absolute;
-    left: 2%;
-    bottom: 10%;
+    left: 20px;
+    bottom: 10px;
 }
 
 #optionBtn >img:hover {
@@ -255,7 +319,7 @@ body {
 
 #optionBoxLast {
     position: absolute;
-    left: 10px;
+    left: 7px;
     bottom: 30px;
     width: 0;
     height: 0;

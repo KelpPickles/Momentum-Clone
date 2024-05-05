@@ -22,7 +22,7 @@
                 <span id="second">:</span>
                 <span id="minute">00</span>
             </div>
-            <div id="hello" style="">
+            <div id="hello">
                 <div id="Greet">What is your name?</div>
                 <input id="name" type="text" required spellcheck="false" onkeypress="enterKey()">
             </div>
@@ -67,11 +67,23 @@
                 <button id="TodoBtn" onclick="TodoBtn()">Todo</button>
             </div>
 
-            <div id="optionArea" style="visibility: hidden;">
-                <div id="optionBox"></div>
+            <div id="optionArea" style="visibility : hidden;">
+                <div id="optionBox">
+                    <div id="optionUserLine">
+                        <div id="userBox" style="visibility : hidden;">
+                            <div id="logoutBtn" onclick="LogOut()">Log Out</div>
+                        </div>
+                        <img id="userIcon" src="icon/user.png">
+                        <div id="userName">UnKnown</div>
+                        <div id="userArrow">
+                            <img src="icon/arrow/arrow-down.png" onclick="userMore()">
+                        </div>
+                    </div>
+                    
+                </div>
                 <div id="optionBoxLast"></div>
             </div>
-            <div id="optionBtn">
+            <div id="optionBtn" style="visibility : hidden;">
                 <img src="icon/gear.png" onclick="OptBtn()">
             </div>
             
