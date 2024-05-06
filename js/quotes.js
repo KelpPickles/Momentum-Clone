@@ -1,3 +1,5 @@
+import {rand} from './utils.js';
+
 const quotes = [
     {text : '마음만을 가지고 있어서는 안된다. 반드시 실천하여야 한다.',
     author : '이소룡'},
@@ -22,8 +24,10 @@ const quotes = [
 const QT = document.getElementById('text');
 const QA = document.getElementById('author');
 
+
+
 function setQuotes() {
-    const indexNum = parseInt((Math.random()*10) % (quotes.length - 1));
+    const indexNum = rand(0, (quotes.length -1));
     if(quotes[indexNum] != undefined) {
         QT.textContent = quotes[indexNum].text;
         QA.textContent = quotes[indexNum].author;

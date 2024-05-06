@@ -11,9 +11,22 @@
 
 
 body {
-    background-color: #EADFB4;
+    /* background-color: #EADFB4; */
     font-family: "Noto Sans KR", sans-serif;
     font-weight: normal;
+    color:white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center top;
 }
 
 #tempinfo {
@@ -73,6 +86,7 @@ body {
     outline: none;
     width: 450px;
     font-size: 30px;
+    color:white;
 }
 
 #mainGoal {
@@ -81,17 +95,20 @@ body {
     width:100%;
     text-align: center;
     font-size:30px;
+    text-shadow: 0 0 15px black;
 }
 
 #Goal {
     border-top: none;
     border-left: none;
     border-right: none;
+    border-bottom: 1px solid white;
     background-color: transparent;
     width: 450px;
     outline:none;
     text-align: center;
     font-size: 30px;
+    color: white;
 }
 
 #TodoArea {
@@ -123,6 +140,7 @@ body {
 #TodoCategory {
     position: absolute;
     left: 20px;
+    color: black;
 }
 
 #arrow-down {
@@ -212,11 +230,14 @@ body {
     background: transparent;
     font-size: 17px;
     float: right;
+    color: white;
+    text-shadow: 0 0 15px black;
+    opacity: 0.5;
     
 }
 
 #TodoBtn:hover {
-    color: grey;
+    opacity: 1;
     cursor: pointer;
 }
 
@@ -308,13 +329,14 @@ body {
 
 #optionBtn >img:hover {
     border-radius: 100%;
-    background-color: #c0b792;
+    opacity: 1;
     cursor: pointer;
 }
 
 #optionBtn > img{
     width: 20px;
     padding: 5px;
+    opacity: 0.5;
 }
 
 #optionBoxLast {
@@ -343,10 +365,12 @@ body {
 
 #text {
     font-size: 20px;
+    text-shadow: 0 0 15px black;
 }
 
 #author {
     /* 폰트 */
     font-size: 15px;
-    color: grey;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 15px black;
 }
