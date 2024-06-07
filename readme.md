@@ -1,3 +1,6 @@
+## 🔎 미리보기
+- https://kelppickles.github.io/Momentum-Clone/
+
 ## ❓ Momentum-Clone 소개 
 - 2학년 1학기 <b>웹프로그래밍기초</b> 수업에서 배운 내용을 활용해보고자 작성
 - 요소의 배치, 특성 등을 혼자 공부해보고 싶어 무작정 시작한 프로젝트
